@@ -8,7 +8,7 @@ function Student() {
   useEffect(() => {
     const token = localStorage.getItem("token");
     axios
-      .get("http://localhost:3000/students", {
+      .get("https://demomernapp-1.onrender.com/students", {
         headers: {
           Authorization: `Bearer ${token}`,
         },
